@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#pl1{
+    height: 250px;
+    width: 300px;
+  margin-top: 200px;
+
+}
+
+.plus{
+margin-left: 170px;
+font-size: 100px;
+margin-bottom: 20px;}
+
+#countlable {
+    text-align: center;
+font-size: 60px;
+}
+    
+#p{
+    font-size: 60px;
+}
+
+    </style>
+
+</head>
+<body>
+   <div>
+    <img src="Pleskavica-–-saftige-Frikadellen-auf-serbische-Art.jpg" id="pl1"> <br>
+ </div>
+    <label id="countlable">0</label> <p id="p">pleskavica</p>
+   
+<p class="plus">+</p>
+
+<script>
+    const pl1 = document.getElementById("pl1");
+const countlable = document.getElementById("countlable");
+let count = 0;
+
+pl1.onclick = function(){
+count++;
+countlable.textContent = count;
+}
+
+</script>
+    </body>
+</html>
